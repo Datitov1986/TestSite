@@ -1,6 +1,8 @@
 span {
  color: #0078E6;
  background-color: yellow;
+ position: relative;
+ bottom: 10px;
 }
 .tags {
  color: #6D3ACF;
@@ -40,11 +42,14 @@ h1 {
  border-radius: 0 25px 0 25px
 }
 button {
+ display: block;
  color: white;
  padding: 5px;
  border-radius: 10px;
  font-weight: bold;
  margin: 20px;
+ position: relative;
+ left: 60px;
 }
 .gradient1 {
  background: linear-gradient(to right, #EE9CA7, #FFDDE1);
@@ -74,4 +79,30 @@ button {
 }
 .bodySecond {
 background-color: bisque;
+}
+.tintin {
+ height: 250px;
+ width: 200px;
+ padding: 10px;
+ float: left;
+}
+.new {
+ clear: left;
+}
+strong {
+ position: relative;
+ top: 10px;
+}
+.right {
+ border: solid 4px black;
+ border-radius: 20px;
+ background-color: cyan;
+ padding: 10px;
+ position: absolute;
+ right: 0px;
+}
+.upfon {
+ position: absolute;
+ top: 300px;
+ left: 600px;
 }
