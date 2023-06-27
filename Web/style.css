@@ -105,6 +105,7 @@ strong {
  position: absolute;
  top: 300px;
  left: 600px;
+ z-index: 0;
 }
 .cheb {
  height: 250px;
