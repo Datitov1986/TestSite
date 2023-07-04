@@ -125,10 +125,11 @@ strong {
 
 .block {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     border: solid 2px black;
     margin: 5px;
     padding: 5px;
+    justify-content: flex-end;
 }
 .index {
     border: #FF0000 2px;
@@ -136,4 +137,24 @@ strong {
     padding: 5px;
     background-color: #6D3ACF;
     margin: 10px;
+    font-style: Abilene Regular;
 }
+.container {
+ display: flex;
+ flex-direction: column;
+ border: solid 2px black;
+ margin: 2px 5px 2px 5px;
+ padding: 3px;
+ background-color: bisque;
+ height: 600px;
+ align-items: flex-start;
+ justify-content: space-between;
+}
+.index1 {
+ border: solid 2px black;
+ margin: 3px;
+ padding: 5px
+ height: 200px;
+ width: 150px;
+}
+
