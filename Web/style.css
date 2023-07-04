@@ -110,7 +110,7 @@ strong {
 }
 .cheb {
  height: 250px;
- weight: 200px;
+ width: 400px;
  padding: 10px;
  float: right;
 }
@@ -122,4 +122,18 @@ strong {
  padding: 20px;
  border-radius: 0 30px 0 30px;
  background: linear-gradient(90deg, #00416A, #E4E5E6);
+
+.block {
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid 2px black;
+    margin: 5px;
+    padding: 5px;
+}
+.index {
+    border: #FF0000 2px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #6D3ACF;
+    margin: 10px;
 }
