@@ -210,8 +210,8 @@ strong {
 }
 
 .slider {
-    height: 300px;
-    width: 980px;
+    height: 40vh;
+    width: 100vw;
     background: #000;
     border: 0px solid #eaeaea;
     overflow: hidden;
@@ -220,7 +220,6 @@ strong {
 }
 
 .slider2 {
-    display: block;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -228,21 +227,50 @@ strong {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     content: inherit;
-
-    -webkit-animation: cycletwo 25s linear infinite;
+    animation: cycle 25s linear infinite;
+    overflow: hidden;
+    position: relative;
 }
 
 .first {
-    -webkit-animation: cycletwo 25s linear infinite;
+    animation: cycle 25s linear infinite;
     position: absolute;
+}
+
+.second {
+    animation: cycle 25s linear infinite;
+    position: absolute;
+}
+
+.third {
+    animation: cycle 25s linear infinite;
+    position: absolute;
+}
+
+.firstImage {
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 40vh;
+}
+
+.secndImage {
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 40vh;
+}
+
+.thirdImage {
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 40vh;
 }
 
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
+    text-align: match-parent;
 }
 
-@keyframes cicle {
+@keyframes cycle {
     0% {
         top: 0px;
     }
@@ -289,5 +317,97 @@ li {
     100% {
         top: 0px;
         opacity: 1;
+    }
+}
+
+@keyframes cycle_two {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle_three {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
     }
 }
